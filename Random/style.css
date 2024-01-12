@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    margin-top: 5%;
+    gap: 5%;
+    
+}
+
+button {
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    grid-row: 1;
+}
+
+.b1 {
+    background-color: rgb(20, 180, 190);
+    border-radius: 10px;
+    color:azure;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+}
+
+.b1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: azure;
+    color: rgb(20, 180, 190);
+}
+
+.b2 {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .b2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .b2:hover {
+    color: #fff;
+   }
+   
+   .b2:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .b2:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+  .b2:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+form {
+    display: grid;
+    place-content: center;
+    grid-row: 2;
+    margin-top: 30%;
+    --timing: 0.3s;
+    --width-of-input: 250px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+}
+
+input {
+    border: none;
+    background: url("M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0") no-repeat right center;;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+.card {
+    grid-row: 3;
+    width: 240px;
+    height: 280px;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius: 20px;
+  }
+  
+  .card > * {
+    margin: 0;
+  }
+  
+  .card__title {
+    font-size: 23px;
+    font-weight: 900;
+    color: #333;
+  }
+  
+  .card__content {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+  }
+  
+  .card__form {
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card__form input {
+    margin-top: 10px;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    padding: 0.6em;
+    border-radius: 14px;
+    border: 1px solid #333;
+    color: black;
+  }
+  
+  .card__form button {
+    justify-content: center;
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 0.68em;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+  
+  .sign-up:hover {
+    opacity: 0.8;
+  } 
