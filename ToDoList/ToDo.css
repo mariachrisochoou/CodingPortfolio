@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #EDEDED;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-style: none;
+}
+
+
+.title {
+    display: flex;
+    margin-top: 10%;
+}
+.title h3 {
+    font-size: 30px;
+}
+.subtitle {
+    margin-top: -5%;
+    display: flex;
+    align-items: center;
+    gap: 520px;
+}
+.subtitle p {
+    color: #878787;
+    font-weight: 300;
+}
+
+.subtitle svg {
+    place-self: center;
+}
+
+#date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 130px;
+    height: 35px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease;
+
+}
+
+
+#date:hover {
+    background-color: #F5F5F5;
+}
+
+.buttons {
+    display: flex;
+    place-content: center;
+    gap: 5px;
+
+}
+
+#more {
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    place-content: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#more:hover {
+    background-color: #F5F5F5;
+}
+
+#tasks {
+    margin-top: 50px;
+    display: grid;
+    place-content: center;
+    gap: 15px;
+}
+
+
+.task {
+    display: flex;
+    place-content: left;
+    align-items: center;
+    background-color: white;
+    width: 900px;
+    height: 50px;
+    border-radius: 10px;
+    gap: 470px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+    width: 24px;
+    height: 24px;
+    border-color: #878787;
+    border: 1px solid;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+.task p {
+    font-weight: 500;
+    margin-left: 10px;
+    align-self: center;
+    font-size: 18px;
+    width: 200px;
+
+}
+
+.time {
+    width: 135px;
+    height: 30px;
+    border-color: #878787;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    font-family: inherit;
+    background-color:#878787;
+    color: white;
+}
+
+.time:hover {
+    background-color: #808080;
+}
+.left {
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    place-content: center;
+    align-items: center;
+
+}
+
+.more {
+    width: 28px;
+    height: 30px;
+    border-color: #878787;
+    border: 1px solid;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    font-family: inherit;
+    background-color:#878787;
+    color: white;
+}
+
+.more:hover {
+    background-color: #808080;
+
+}
+
+.box svg {
+    visibility: hidden;
+    color: green;
+}
+
+
+#chelvon-up  {
+    margin: 5px;
+}
+
+#chelvon-down {
+    margin: 5px;
+}
+
+#NewTaskForm {
+    display: flex;
+    align-items: center;
+
+}
+
+#NewTaskForm button {
+    border: none;
+    background-color: inherit;
+    margin-top: 5px;
+}
+
+#NewTaskForm button:hover {
+    color: red;
+}
+
+.addNewTask {
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5%;
+    place-self: center;
+}
+
+.addNewTask svg {
+    border-radius: 2px;
+    align-self: right;
+}
+
+#newTask {
+    width: 450px;
+    border: none;
+    height: 30px;
+    outline: none;
+    font-family: inherit;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 447px) {
+    .title {
+        justify-self: center;
+    }
+
+    .title h3 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        width: 350px;
+        display: grid;
+        gap: 2px;
+        place-content: center;
+        margin-top: -10%;
+    }
+
+    .task {
+        width: 350px;
+    }
+
+    .time {
+        visibility: hidden;
+    }
+
+    .more {
+        visibility: hidden;
+    }
+
+    .addNewTask {
+        width: 350px;
+    }
+
+    #newTask {
+        width: 350px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .title {
+        justify-self: center;
+    }
+
+    .title h3 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        width: 350px;
+        display: grid;
+        gap: 2px;
+        place-content: center;
+        margin-top: -10%;
+    }
+
+    .task {
+        width: 350px;
+    }
+
+    .time {
+        visibility: hidden;
+    }
+
+    .more {
+        visibility: hidden;
+    }
+
+    .addNewTask {
+        margin-top: 10%;
+        width: 350px;
+    }
+
+    #newTask {
+        width: 300px;
+        font-size: 14px;
+    }
+}
+
+
