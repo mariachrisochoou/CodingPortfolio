@@ -10,5 +10,4 @@ Feel free to browse around.
 2. [To Do List](https://github.com/mariachrisochoou/CodingPortfolio/tree/main/ToDoList): The To-Do List application is a simple, interactive tool that helps users manage their tasks efficiently. It allows users to add new tasks, mark them as complete, and view a list of all tasks.
 
 
-
-@ All rights Reserved.
+© 2024 Maria Chrysochoou. All Rights Reserved.

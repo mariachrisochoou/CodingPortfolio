@@ -4,7 +4,7 @@ let today = new Date();
 currentDate.textContent = today.toDateString() + ', ' + today.getHours() +':' +today.getMinutes();
 
 
-let numberOfTasks = 0;
+let numberOfTasks = 1;
 function addNewTask(event) {
     event.preventDefault();
     const taskList = document.getElementById('tasks');
