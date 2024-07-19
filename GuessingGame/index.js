@@ -1,4 +1,12 @@
-let answer = 34;
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+
+let answer = getRandomInt(1, 100);
+
 let tries = [];
 document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
